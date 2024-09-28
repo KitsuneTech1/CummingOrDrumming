@@ -16,7 +16,12 @@ body {
 
 header h1 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+    color: #555;
 }
 
 .image-container {
@@ -52,6 +57,22 @@ header h1 {
     margin-top: 20px;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.next-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+    background-color: #45a049;
 }
 
 footer {
