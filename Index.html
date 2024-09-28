@@ -6,26 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cumming or Drumming</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Cumming or Drumming</h1>
-            <p>Guess if the person in the picture is "Cumming" or "Drumming"!</p>
+        <header class="header">
+            <h1 class="title">Cumming or Drumming</h1>
+            <p class="subtitle">Can you guess if the person is "Cumming" or "Drumming"?</p>
         </header>
-        <main>
+        <main class="main-content">
             <div class="image-container">
-                <img id="mainImage" src="yoooo.webp" alt="Guess Image">
+                <img id="mainImage" src="yoooo.webp" alt="Guess Image" class="guess-image">
             </div>
             <div class="button-container">
-                <button class="guess-button" onclick="makeGuess('Cumming')">Cumming</button>
-                <button class="guess-button" onclick="makeGuess('Drumming')">Drumming</button>
+                <button class="guess-button cumming-button" onclick="makeGuess('Cumming')">Cumming</button>
+                <button class="guess-button drumming-button" onclick="makeGuess('Drumming')">Drumming</button>
             </div>
             <div id="result" class="result-container"></div>
             <button id="nextImage" class="next-button" onclick="loadNextImage()" style="display: none;">Next</button>
         </main>
-        <footer>
-            <p>© 2024 Cumming or Drumming</p>
+        <footer class="footer">
+            <p>© 2024 <span class="footer-brand">Cumming or Drumming</span> | All Rights Reserved</p>
         </footer>
     </div>
 
